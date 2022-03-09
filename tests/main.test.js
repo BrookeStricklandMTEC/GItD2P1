@@ -6,6 +6,6 @@ describe('Requirements', () => {
   });
 
   it('Should have added and committed all the files.', () => {
-    expect(fs.existsSync('./.git/'))
-  })
-})
+    expect(fs.existsSync('./.git/COMMIT_EDITMSG')).toBe(true);
+  });
+});
